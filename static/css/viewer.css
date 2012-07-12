@@ -1,0 +1,23 @@
+.viewer-container {
+  border: 1px solid #dddddd;
+  width: 600px;
+}
+.console {
+  margin: 0px;
+  background-color: #f5f5f5;
+  min-height: 50px;
+  border-top: 1px solid #dddddd;
+}
+.viewer {
+  display: none;
+  margin: 0px;
+  padding: 0px;
+  width: 600px;
+  height: 600px;
+  border: none;
+}
+.viewer,
+.preview {
+  heigth: 600px;
+  width: 600px;
+}

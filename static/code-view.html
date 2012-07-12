@@ -12,6 +12,7 @@
 	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/base.css" type="css" />
 	<link rel="stylesheet" href="css/code-view.css" type="css" />
+	<link rel="stylesheet" href="css/viewer.css" type="css" />
 	<link rel="stylesheet" href="lib/CodeMirror/lib/codemirror.css" type="css" />
 	<link rel="stylesheet" href="lib/CodeMirror/theme/blackboard.css" type="css" />
 </head>
@@ -61,9 +62,13 @@
   			<button class="btn btn-primary" type="button"><i class="icon-share-alt icon-white"></i> Inspired</button>
 		</p>
   		<div id="main-container">
-			<div id="viewer-container">
-				<iframe id="viewer" src=""></iframe>
-				<div id="console"></div>
+			<div id="viewer-container" class="viewer-container">
+				<div class="preview">
+					<img src="http://placehold.it/600x600" alt="">
+					<div class="play-button"><i class="icon-play icon-white"> </i> Play</div>
+				</div>
+				<iframe id="viewer" class=".viewer" src=""></iframe>
+				<div id="console" class="console"></div>
 			</div>
 			<div id="editor-container">
 				<form method="post" action="">

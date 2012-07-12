@@ -1,0 +1,28 @@
+@border: 1px solid #ddd;
+@viewer-width: 600px;
+
+.viewer-container {
+	border: @border;
+	width: @viewer-width;
+}
+
+.console {
+	margin: 0px;
+	background-color: #f5f5f5;
+	min-height: 50px;
+	border-top: @border;
+}
+
+.viewer {
+	display: none;
+	margin: 0px;
+	padding: 0px;
+	width: @viewer-width;
+	height: @viewer-width;
+	border: none;
+}
+
+.viewer, .preview {
+	heigth: @viewer-width;
+	width: @viewer-width;
+}

@@ -28,20 +28,18 @@
 	
 	
 	// サイズ調整 ///////////////////////////////////////	
-	var headerHeight = 0;//$('#header').outerHeight(true);// + $('h1.page-header').outerHeight(true);
-	var bodyOffset = 0;//$(document.body).outerHeight(true) - $(document.body).height();
 	var refreshSize = function() {
 		// document.innerHeightを調整するため、高さをリセット
 		$('#console').height(0);
 		$('div.CodeMirror-scroll').height(0);
+		var baseHeight = $('#main-container').height()
 		var editorHeight = 
-			$('#main-container').height()
-			- headerHeight
-			- bodyOffset
+			baseHeight
+			-1	// 1pxはボーダー分
 			- $('#editor-section-tab').outerHeight(true);
 		
 		var consoleHeight = 
-			$('#main-container').height() - headerHeight - $('#viewer').outerHeight(true) - bodyOffset;
+			baseHeight - $('#viewer').outerHeight(true) -3; // 3pxはボーダー分
 		
 		$('#console').height(consoleHeight);
 		$('div.CodeMirror-scroll').height(editorHeight);
