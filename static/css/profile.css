@@ -1,0 +1,10 @@
+.profile-image {
+  float: left;
+  margin-right: 1em;
+}
+.show-grid [class*="span"] {
+  background-color: #EEE;
+}
+.show-grid .show-grid [class*="span"] {
+  background-color: #CCC;
+}
