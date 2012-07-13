@@ -1,0 +1,54 @@
+.timeline .datetime-box {
+  position: relative;
+  background: #000000;
+  color: #FFF;
+  text-align: center;
+  width: 80px;
+  height: 70px;
+  padding: 10px 0 0 0;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -ms-border-radius: 1.0em;
+}
+.timeline .datetime-box:after {
+  left: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.timeline .datetime-box:after {
+  border-left-color: #000000;
+  border-width: 5px;
+  top: 30%;
+  margin-top: -5px;
+}
+.datetime-box > .date {
+  font: 80% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.datetime-box > .time {
+  font: bold 120% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.timeline th,
+.timeline td {
+  padding: 8px;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+}
+.timeline .user-icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  float: left;
+}
+.timeline .datetime {
+  font: bold 80% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  color: #ccc;
+}
